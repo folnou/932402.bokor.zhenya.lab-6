@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О себе — Погода по городу</title>
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon.png">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Погода</a>
+    <nav aria-label="Основная навигация">
+      <a href="/">Главная</a>
+      <a href="/about" aria-current="page">О себе</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h1>О себе</h1>
+      <p>Лабораторная работа №6. Вариант 6: «Погода по городу».</p>
+      <p>Студент: <strong>Бокор Евгений 932402</strong>.</p>
+      <h2>Что реализовано</h2>
+      <ul>
+        <li>Сервер на Node.js и Express со статикой и маршрутами</li>
+        <li>Mock API погоды для пяти городов</li>
+        <li>Манифест и service worker: приложение устанавливается и работает офлайн</li>
+      </ul>
+      <p><a href="/api/status">Статус сервера (JSON)</a></p>
+    </section>
+  </main>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

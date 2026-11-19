@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Погода по городу</title>
+  <meta name="description" content="Погода по городам: учебное PWA-приложение">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon.png">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Погода</a>
+    <nav aria-label="Основная навигация">
+      <a href="/" aria-current="page">Главная</a>
+      <a href="/about">О себе</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <p id="offline-banner" class="banner" role="status" hidden>
+      Нет подключения к сети. Показаны сохранённые данные.
+    </p>
+
+    <section class="panel" aria-labelledby="form-title">
+      <h1 id="form-title">Погода по городу</h1>
+
+      <div class="controls">
+        <div class="field">
+          <label for="city">Город</label>
+          <select id="city">
+            <option value="Moscow">Москва</option>
+            <option value="London">Лондон</option>
+            <option value="Paris">Париж</option>
+            <option value="Tokyo">Токио</option>
+            <option value="Berlin">Берлин</option>
+          </select>
+        </div>
+
+        <fieldset class="field units">
+          <legend>Единицы</legend>
+          <label><input type="radio" name="units" value="metric" checked> °C</label>
+          <label><input type="radio" name="units" value="imperial"> °F</label>
+        </fieldset>
+      </div>
+
+      <div id="result" class="result" aria-live="polite">
+        <p class="muted">Загрузка…</p>
+      </div>
+
+      <button id="install-btn" class="install" type="button" hidden>Установить приложение</button>
+    </section>
+  </main>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

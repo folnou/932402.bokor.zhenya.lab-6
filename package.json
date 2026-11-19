@@ -1,0 +1,13 @@
+{
+  "name": "lab6-weather-pwa",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №6: Express-сервер и PWA «Погода по городу»",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
